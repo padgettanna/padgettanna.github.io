@@ -1,0 +1,91 @@
+:root{
+    --left-width: 300px;
+    --gap: 24px;
+    --max-width: 1200px;
+    --font-heading: "Merriweather", serif;
+    --font-body: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 20px;
+  background: #fafafa;
+  color: #222;
+}
+
+.page-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: var(--left-width) 1fr;
+  gap: var(--gap);
+  align-items: start;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .page-container {
+    grid-template-columns: 1fr;
+    padding: 0 12px;
+  }
+}
+
+.left-col {
+  background: #f9f9f9;
+  padding: 18px;
+  border-radius: 6px;
+}
+
+.right-col {
+  padding: 0 6px;
+}
+
+.panel {
+  background: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.panel h1, .panel h2, .panel h3 {
+  font-family: var(--font-heading);
+  margin: 0 0 8px;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0 0 6px;
+}
+
+.contact p,
+.skills ul {
+  margin: 6px 0;
+}
+
+footer.site-footer {
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.social-links a {
+  margin: 0 6px;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
