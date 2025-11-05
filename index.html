@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+<html>
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/site.css">
+</html>
+<h1>
+    This is about me
+</h1>
+<h3>
+    <ol>
+        <li>I like movies</li>
+        <li>I like books</li>
+    </ol>
+</h3>
+
+<div id="infopanel">
+    This is some important information about me!
+</div>
+
+<div id="anotherPanel" class="infoDisplay">
+    This is some other information about me!
+</div>
+<div id="anotherPanel2" class="infoDisplay">
+    This is even more information about me!
+</div>
+
+<button onclick="changePanels()">Change Panels</button>
+
+<script>
+    function changePanels() {
+        var panel1 = document.getElementById("infopanel");
+        panel1.innerHTML = "<b>I have changed the information in this panel!</b>";
+        panel1.className = ".infoDisplay";
+    }
+</script>
