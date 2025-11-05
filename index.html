@@ -2,36 +2,32 @@
 layout: default
 title: Home
 ---
-<html>
-    <title>About Me</title>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>️Anna's Resume Website</title>
+</head>
+    <body>
+        <div id="myInfo">
+            <h3>About Me</h3>
+            <p>Software Engineer and U.S. Navy veteran with 5+ years leading teams and managing projects. Skilled in Java, Python, C++, SQL, and web development. Strong leadership, communication, and analytical abilities; delivers high-quality solutions in fast-paced environments.</p>
+        </div>
+        <div id="educationPanel">
+            <h3>Education</h3>
+            <p>Bachelor of Science in Computer Science | Southern New Hampshire University | Expected Jan 2026 | GPA 4.0</p>
+            <p>Associate of Science Computer Science | Southern New Hampshire University | GPA 4.0</p>
+
+        </div>
+        <div id="workExperiencePanel">
+            <h3>Work Experience</h3>
+            This is even more information about me!
+        </div>
+        <div id="projectsPanel">
+            <h3>My Projects</h3>
+            This is even more information about me!
+        </div>
+    </body>
 </html>
-<h1>
-    This is about me
-</h1>
-<h3>
-    <ol>
-        <li>I like movies</li>
-        <li>I like books</li>
-    </ol>
-</h3>
-
-<div id="infopanel">
-    This is some important information about me!
-</div>
-
-<div id="anotherPanel">
-    This is some other information about me!
-</div>
-<div id="anotherPanel2">
-    This is even more information about me!
-</div>
-
-<button onclick="changePanels()">Change Panels</button>
-
-<script>
-    function changePanels() {
-        var panel1 = document.getElementById("infopanel");
-        panel1.innerHTML = "<b>I have changed the information in this panel!</b>";
-        panel1.className = ".infoDisplay";
-    }
-</script>
