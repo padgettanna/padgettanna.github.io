@@ -1,65 +1,97 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>️Anna's Resume Website</title>
-</head>
-    <body>
-        <div id="myInfo">
-            <h1>About Me</h1>
-            <p>Software Engineer and U.S. Navy veteran with 5+ years leading teams and managing projects. Skilled in Java, Python, C++, SQL, and web development. Strong leadership, communication, and analytical abilities; delivers high-quality solutions in fast-paced environments.</p>
-        </div>
-        <div id="educationPanel">
-            <h1>Education</h1>
-            <p>Bachelor of Science in Computer Science | Southern New Hampshire University | Expected Jan 2026 | GPA 4.0</p>
-            <p>Associate of Science Computer Science | Southern New Hampshire University | GPA 4.0</p>
+    <title>️Anna Padgett | Resume</title>
 
-        </div>
-        <div id="workExperiencePanel">
-            <h1>Work Experience</h1>
-            <h2>Hospital Corpsman | U.S. Navy, Camp Pendleton, CA | Oct 2022–Oct 2025</h2>
-            <ul>
-                <li>Supervised team of 5, improved workflow efficiency and patient care delivery.</li>
-                <li>Optimized procedures and resolved IT/software issues, reducing delays by 50%.</li>
-                <li>Trained 15 staff on EHR software, increased staff productivity by 40%.</li>
-            </ul>
-            <h2>Hospital Corpsman | U.S. Navy, Portsmouth, VA | Jul 2020–Oct 2022</h2>
-            <ul>
-                <li>Assisted medical providers with patient treatment, documentation, and EHR systems.</li>
-                <li>Supervised team of 6 corpsmen providing care to 6,700 personnel annually.</li>
-                <li>Managed $78,000 in medical equipment.</li>
-                <li>Awarded Navy & Marine Corps Achievement Medal for exceptional leadership and performance.</li>
-            </ul>
-            <h2>Additional Experience</h2>
-            <ul>
-                <li>Line Cook | Cravings Restaurant, NC | 2016-2020 – Assisted in team management, training, inventory control.</li>
-                <li>Assistant Manager | OBX Gas, NC | 2013-2019 – Customer service, staff training, inventory oversight.</li>
-            </ul>
-        </div>
-        <div id="projectsPanel">
-            <h1>My Projects</h1>
-            <ul>
-                <li><a href="https://github.com/padgettanna/Weight-Tracker-App.git">Weight Tracker Mobile App</a>– Android app to track weight goals; built with Java and SQLite.</li>
-                <li><a href="https://github.com/padgettanna/Pirate-Intelligent-Agent.git">Pirate Intelligent Agent</a> – Reinforcement learning agent (Python, TensorFlow) achieving 100% success rate.</li>
-                <li><a href="https://github.com/padgettanna/Smart-Thermostat---Raspberry-Pi.git">Smart Thermostat</a> – Raspberry Pi-based thermostat using Python, GPIOZero, and state machine.</li>
-                <li><a href="https://github.com/padgettanna/Smart-Thermostat---Raspberry-Pi.git">Animal Shelter Dashboard</a> – MongoDB dashboard to manage animal records with Python visualizations.</li>
-            </ul>
-        </div>
-        <div id="contactsPanel">
-            <h1>Contact Me</h1>
-            <p>Address: Winchester, CA</p>
-            <p>Phone: (252) 305 XXXX</p>
-            <p>Email: anna.padgett1@outlook.com</p>
-            <p><a href="https://www.linkedin.com/in/anna-padgett-sd/">LinkedIn</a></p>
-            <p><a href="https://github.com/padgettanna">GitHub</a></p>
-            <p><a href="https://www.facebook.com/anna.beloivanenko">Facebook</a></p>
-            <p><a href="https://www.instagram.com/anna_p_socal/">Instagram</a></p>
-        </div>
-    </body>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Left column -->
+        <aside class="left-col">
+            <div class="panel" style="text-align:center;">
+                <!-- Replace with your real image path -->
+                <img src="images/profile.jpg" alt="Anna Padgett" class="profile-photo" />
+                <h2 class="name">Anna Padgett</h2>
+                <p style="margin:0;">Software Engineer & U.S. Navy veteran</p>
+            </div>
+
+            <div class="panel contact">
+                <h3>Contact</h3>
+                <p>Address: Winchester, CA</p>
+                <p>Phone: (252) 305 XXXX</p>
+                <p>Email: anna.padgett1@outlook.com</p>
+            </div>
+
+            <div class="panel skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Java, Python, C++, C#, SQL</li>
+                    <li>Web development (HTML/CSS/JS)</li>
+                    <li>Leadership & Project Management</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Right column -->
+        <main class="right-col">
+            <section class="panel">
+                <h1>Work Experience</h1>
+
+                <h2>Hospital Corpsman | U.S. Navy, Camp Pendleton, CA | Oct 2022–Oct 2025</h2>
+                <ul>
+                    <li>Supervised team of 5, improved workflow efficiency and patient care delivery.</li>
+                    <li>Optimized procedures and resolved IT/software issues, reducing delays by 50%.</li>
+                    <li>Trained 15 staff on EHR software, increased staff productivity by 40%.</li>
+                </ul>
+
+                <h2>Hospital Corpsman | U.S. Navy, Portsmouth, VA | Jul 2020–Oct 2022</h2>
+                <ul>
+                    <li>Assisted medical providers with patient treatment, documentation, and EHR systems.</li>
+                    <li>Supervised team of 6 corpsmen providing care to 6,700 personnel annually.</li>
+                    <li>Managed $78,000 in medical equipment.</li>
+                    <li>Awarded Navy & Marine Corps Achievement Medal for exceptional leadership and performance.</li>
+                </ul>
+
+                <h2>Additional Experience</h2>
+                <ul>
+                    <li>Line Cook | Cravings Restaurant, NC | 2016-2020 – Assisted in team management, training, inventory control.</li>
+                    <li>Assistant Manager | OBX Gas, NC | 2013-2019 – Customer service, staff training, inventory oversight.</li>
+                </ul>
+            </section>
+
+            <section class="panel">
+                <h1>Education</h1>
+                <p><strong>Bachelor of Science in Computer Science</strong> | Southern New Hampshire University | Expected Jan 2026 | GPA 4.0</p>
+                <p><strong>Associate of Science Computer Science</strong> | Southern New Hampshire University | GPA 4.0</p>
+            </section>
+
+            <section class="panel">
+                <h1>Projects</h1>
+                <ul>
+                    <li><a href="https://github.com/padgettanna/Weight-Tracker-App.git">Weight Tracker Mobile App</a> – Android app to track weight goals; built with Java and SQLite.</li>
+                    <li><a href="https://github.com/padgettanna/Pirate-Intelligent-Agent.git">Pirate Intelligent Agent</a> – Reinforcement learning agent (Python, TensorFlow) achieving 100% success rate.</li>
+                    <li><a href="https://github.com/padgettanna/Smart-Thermostat---Raspberry-Pi.git">Smart Thermostat</a> – Raspberry Pi-based thermostat using Python, GPIOZero, and state machine.</li>
+                    <li><a href="https://github.com/padgettanna/Smart-Thermostat---Raspberry-Pi.git">Animal Shelter Dashboard</a> – MongoDB dashboard to manage animal records with Python visualizations.</li>
+                </ul>
+            </section>
+
+            <footer class="panel site-footer">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/anna-padgett-sd/">LinkedIn</a>·
+                    <a href="https://github.com/padgettanna">GitHub</a>·
+                    <a href="https://www.facebook.com/anna.beloivanenko">Facebook</a>·
+                    <a href="https://www.instagram.com/anna_p_socal/">Instagram</a>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
 </html>
