@@ -3,20 +3,24 @@
     --gap: 24px;
     --max-width: 1200px;
 
-    --color-accent: #2e7d5f;
-    --color-accent-light: #81c9a8;
-    --color-bg: #f3f7f4;
-    --color-panel: #ffffff;
-    --color-text: #1f2b1f;
-    --color-muted: #4f5f51;
-    --color-shadow: rgba(46, 125, 95, 0.2);
+    --color-accent: #0b5f73;          
+    --color-accent-light: #3fa9c3;
+    --color-bg: #0b0f14;
+    --color-panel: #141e29;          
+    --color-text: #e6edf3;            
+    --color-muted: #9fb3c8;
+    --color-shadow: rgba(11, 115, 136, 0.18);
     --font-heading: "Merriweather", serif;
     --font-body: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--font-body);
-  background: linear-gradient(120deg, #f6f9f6, #e9f4eb, #f6f9f6);
+  background: radial-gradient(
+  circle at top left,
+  #0f1720,
+  #070b10 60%
+  );
   background-size: 300% 300%;
   animation: gradientMove 20s ease infinite;
   color: var(--color-text);
@@ -56,7 +60,7 @@ body {
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 6px var(--color-shadow);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   will-change: transform;
 }
@@ -68,9 +72,7 @@ body {
 
 /* Left + right columns */
 .left-col {
-  background: linear-gradient(180deg, #e9f4eb 0%, #f6f9f6 100%);
   padding: 20px;
-  border-radius: 12px;
 }
 
 .right-col {
@@ -90,11 +92,11 @@ body {
   image-rendering: auto;
 }
 
-.name {
-  text-align: center;
-  font-size: 1.8rem;
+.left-col .name {
   color: var(--color-accent);
-  margin: 0 0 8px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
 }
 
 .left-col p {
@@ -113,8 +115,11 @@ body {
 }
 
 .panel h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
   border-bottom: 3px solid;
-  border-image: linear-gradient(to right, var(--color-accent), var(--color-accent-light)) 1;
+  border-image: linear-gradient(to right,  var(--color-accent), rgba(63, 169, 195, 0)) 1;
 }
 
 .panel h2 {
@@ -140,6 +145,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #6fd3ea;
 }
 
 /* Skills and contact */
@@ -201,10 +207,23 @@ footer.site-footer {
 .social-links a:hover {
   opacity: 0.7;
   transform: translateY(-2px);
-  filter: drop-shadow(0 0 6px var(--color-accent-light));
+  filter: drop-shadow(0 0 8px rgba(63, 169, 195, 0.6));
+}
+
+a:focus,
+a:focus-visible,
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 
 /* Smooth transitions */
 * {
   transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Remove mobile tap highlight */
+* {
+  -webkit-tap-highlight-color: transparent;
 }
