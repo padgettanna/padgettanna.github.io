@@ -3,10 +3,10 @@
     --gap: 24px;
     --max-width: 1200px;
 
-    --color-accent: #0b5f73;          
+    --color-accent: #0d7994;          
     --color-accent-light: #3fa9c3;
     --color-bg: #0d1218;
-    --color-panel: #162231;          
+    --color-panel: #182230;          
     --color-text: #e6edf3;            
     --color-muted: #9fb3c8;
     --color-shadow: rgba(11, 115, 136, 0.18);
@@ -124,7 +124,7 @@ body {
 
 .panel h2 {
   font-size: 1.1rem;
-  color: #9fd9e6;
+  color: var(--color-text);
 }
 
 /* Lists */
