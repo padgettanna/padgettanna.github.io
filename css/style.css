@@ -565,16 +565,18 @@ body.home .home-about p {
 
 .video-wrapper {
   position: relative;
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px; /* allow larger displays to show a bigger video */
   margin: 1.5rem auto;
   aspect-ratio: 16 / 9;
-  background: rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .video-wrapper iframe {
-  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
