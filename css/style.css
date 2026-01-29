@@ -566,7 +566,7 @@ body.home .home-about p {
 .video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 900px; /* allow larger displays to show a bigger video */
+  max-width: 720px;
   margin: 1.5rem auto;
   aspect-ratio: 16 / 9;
   border-radius: 8px;
