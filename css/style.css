@@ -563,6 +563,22 @@ body.home .home-about p {
   margin-bottom: 16px;
 }
 
+.video-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  aspect-ratio: 16 / 9;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Mobile */
 @media (max-width: 900px) {
   body.home .home-hero {
