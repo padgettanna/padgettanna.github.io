@@ -620,6 +620,11 @@ body.home .home-about p {
   position: absolute;
   bottom: 1.25rem;
   left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem;
+  text-align: center;
   transform: translateX(-50%);
   font-size: 0.85rem;
   letter-spacing: 0.08em;
