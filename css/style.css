@@ -605,6 +605,22 @@ body.home .home-about p {
   background-color: #fff;
 }
 
+.mobile-screens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.mobile-screens img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  background: transparent;
+  border: none;
+  border-radius: 16px;
+}
+
 /* Mobile */
 @media (max-width: 900px) {
   body.home .home-hero {
