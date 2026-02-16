@@ -239,6 +239,11 @@ main {
   color: var(--color-text);
 }
 
+.eportfolio-page .panel h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 ul {
   padding-left: 20px;
 }
