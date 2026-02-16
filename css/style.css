@@ -632,38 +632,3 @@ body.home .home-about p {
   }
 }
 
-.scroll-hint {
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1.25rem;
-  text-align: center;
-  transform: translateX(-50%);
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-muted);
-  opacity: 0.7;
-  pointer-events: none;
-  animation: scrollHintFade 2.5s ease-in-out infinite;
-}
-
-@keyframes scrollHintFade {
-  0%, 100% {
-    opacity: 0.35;
-  }
-  50% {
-    opacity: 0.75;
-  }
-}
-
-@media (max-width: 768px) {
-  .scroll-hint {
-    display: none;
-  }
-}
-
-

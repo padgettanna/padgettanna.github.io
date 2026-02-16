@@ -8,7 +8,7 @@
   let current = 0;
   let isScrolling = false;
 
-  window.addEventListener(
+  container.addEventListener(
     'wheel',
     (e) => {
       if (isScrolling) return;
@@ -33,7 +33,7 @@
     { passive: false }
   );
 
-  window.addEventListener('keydown', (e) => {
+  container.addEventListener('keydown', (e) => {
   if (isScrolling) return;
 
   if (e.key === 'ArrowDown' && current < panels.length - 1) {
