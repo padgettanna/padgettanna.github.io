@@ -619,7 +619,7 @@ body.home .home-about p {
 .mobile-screens img {
   width: 100%;
   height: auto;
-  max-height: 500px;
+  max-height: 450px;
   object-fit: contain;
   background: transparent;
   border: none;
